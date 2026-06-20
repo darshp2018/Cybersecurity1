@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-section">
+        <img src="images/logo.jpg" alt="CyberSecurity Logo">
+        <h1>CyberSecurity</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="CyberFacts.html">CyberFacts</a>
+        <a href="safetytips.html">Safety Tips</a>
+        <a href="faq.html">FAQ's</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="contact-header">
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions, suggestions, or need support?
+                Fill out the form and our team will get back to you soon.
+            </p>
+        </div>
+
+        <div class="contact-image">
+            <img src="images/contactus.jpg" alt="Cybersecurity contact image">
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Send us a Message</h2>
+
+        <form id="contactForm" action="dataForm.php" method="POST">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="fname">Full Name <span>*</span></label>
+                    <input type="text" id="fname" name="input1" placeholder="Enter your full name">
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email" name="input2" placeholder="Enter your email address">
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject <span>*</span></label>
+                    <input type="text" id="subject" name="input3" placeholder="Enter subject">
+                    <small id="subjectError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="input4" placeholder="Write your message here..."></textarea>
+                    <small id="messageError"></small>
+                </div>
+
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            <p class="required-text">* All fields are required.</p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 CyberSecurity Website | Stay Safe Online</p>
+</footer>
+
+<script src="js/contact.js"></script>
+
+</body>
+
+</html>
